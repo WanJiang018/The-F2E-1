@@ -1,0 +1,24 @@
+.carousel-min-height {
+    min-height: 582px;
+}
+.slick-slide {
+    margin-right: 20px !important;
+}
+
+.slick-slide[aria-hidden="true"] {
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    font-size: 40px !important;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--bs-primary) !important;
+    opacity: 1 !important;
+}
+
+.slick-dots li button:before {
+    color: #fff !important;
+    opacity: 1 !important;
+}

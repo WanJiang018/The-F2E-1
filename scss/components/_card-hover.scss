@@ -1,0 +1,28 @@
+.card-hover {
+    height: 470px;
+    @include sm {
+        height: 366px;
+    }
+}
+.card-hover .card-body:hover {
+    @include sm {
+        transform: translateY(-42px);
+        transition: all 0.8s;
+        .tag {
+            opacity: 0;
+            transition: opacity 0.8s;
+        }
+        li:last-of-type div {
+            overflow: auto;
+            text-wrap: wrap;
+        }
+    }
+}
+.card-hover li:last-of-type div {
+    @include sm {
+        text-overflow: ellipsis;
+        width: 250px;
+        overflow: hidden;
+        text-wrap: nowrap;
+    }
+}

@@ -1,0 +1,36 @@
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin logo($img, $height, $width) {
+    @include hide-text;
+    display: block;
+    height: $height;
+    width: $width;
+    background: url($imgUrlPrefix + $img) no-repeat;
+}
+@mixin cover-img($img) {
+    background-image: url($imgUrlPrefix + $img);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 0;
+}
+
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}

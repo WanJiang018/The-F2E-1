@@ -1,0 +1,18 @@
+@import "./vendors/bootstrap/bootstrap";
+
+@import "./helpers/variables";
+@import "./helpers/mixin";
+@import "./helpers/utilities";
+
+@import "./components/navbar";
+@import "./components/card-hover";
+@import "./components/card-flip";
+@import "./components/card-check";
+@import "./components/carousel";
+@import "./components/mobile-menu";
+
+@import "./layout/layout";
+
+@import "./vendors/aos/aos";
+@import "./vendors/slick/slick";
+@import "./vendors/slick/slick-theme";

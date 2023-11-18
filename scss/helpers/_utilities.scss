@@ -1,0 +1,111 @@
+.logo {
+    @include logo("icon-logo.svg", 58px, 235px);
+}
+.text-special-title {
+    color: var(--bs-primary);
+    font-size: 1.87rem;
+    font-weight: 400;
+    line-height: 1.2;
+    @include sm {
+        font-size: 3.75rem;
+        font-weight: bold;
+    }
+}
+.text-special-title-small {
+    color: var(--bs-primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.fs-sm-4 {
+    @include sm {
+        font-size: calc(1.275rem + 0.3vw) !important;
+    }
+}
+.fs-sm-5 {
+    @include sm {
+        font-size: 1.25rem !important;
+    }
+}
+.ms-offset-5 {
+    margin-left: -3rem !important;
+}
+.w-fit-content {
+    width: fit-content !important;
+}
+.w-85 {
+    width: 85%;
+}
+.w-sm-50 {
+    @include sm {
+        width: 50% !important;
+    }
+}
+
+.bg-small-donation {
+    @include cover-img("bg-small-donation.png");
+}
+.bg-grey {
+    background: #e3e3e3 !important;
+}
+.text-yellow {
+    color: #ffb300 !important;
+}
+.text-muted {
+    color: #999999 !important;
+}
+.border-radius-8 {
+    border-radius: 8px;
+}
+.border-radius-80 {
+    border-radius: 80px;
+}
+.politics-block {
+    padding: 40px 50px 50px 50px;
+    border-radius: 80px 0px;
+    border: 5px solid var(--bs-primary);
+    background: #fafafa;
+    box-shadow: -15px 20px 0px 0px var(--bs-primary);
+}
+.card-title {
+    font-size: calc(1.275rem + 0.3vw);
+}
+.card-text {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+.card-triangle-position {
+    left: 45%;
+    bottom: -10px;
+}
+.tag {
+    padding: 5px 10px;
+    border-radius: 8px 0px;
+    background: var(--bs-secondary);
+    color: #fff;
+}
+.tag-corner {
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 8px;
+    background: var(--bs-secondary);
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
+.cat {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+}
+.hover-scale-image:hover {
+    transform: scale(1.5);
+    transition: 0.8s;
+}
+.form-control.is-valid:focus,
+.was-validated :valid.form-control {
+    border-color: inherit !important;
+    background-image: inherit !important;
+    box-shadow: inherit !important;
+}

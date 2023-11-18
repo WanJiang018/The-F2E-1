@@ -1,0 +1,26 @@
+.card-check {
+    border-radius: 8px;
+    border: 2px solid #a9a9a9;
+    background: #fff;
+    padding: 8px 20px;
+    width: 100%;
+}
+button.card-check.active {
+    background: var(--bs-primary);
+    border: 0;
+    color: #fff;
+    .text-special-title-small {
+        color: #fff;
+    }
+}
+button.card-check:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--bs-primary);
+}
+.btn-check:checked + .btn.card-check,
+.btn-check + .btn.card-check:hover {
+    color: var(--bs-primary);
+    border: 2px solid var(--bs-primary);
+    background: #fff;
+    opacity: 1;
+}
